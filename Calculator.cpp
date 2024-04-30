@@ -21,6 +21,7 @@ cout<<"Press '4' for Cos: "<<endl;
 cout<<"Press '5' for Tan: "<<endl;
 cout<<"Press '6' for Log: "<<endl;
 cout<<"Press '7' for Base Log: "<<endl;
+cout<<"Press '8' for Calculator: "<<endl;
 
 cin>>z;
 switch(z)
@@ -67,6 +68,36 @@ case 7:
 cout<<"Enter the Number for Calculating LOG WITH BASE 10: "<<endl;
 cin>>a;
 Baselog(a);
+break;
+
+case 8:
+int a = 0;
+    int b = 0;
+    char operation;
+    std::cout << "Enter first number: ";
+    std::cin >> a;
+    std::cout << "Enter second number: ";
+    std::cin >> b;
+    std::cout << "Enter operation(-;+;*;/): ";
+    std::cin >> operation;
+ 
+    switch (operation){
+    case '-':
+        std::cout << "a - b = " << a - b <<'\n';
+        break;
+    case '+':
+        std::cout << "a + b = " << a + b << '\n';
+        break;
+    case '*':
+        std::cout << "a * b = " << a * b << '\n';
+        break;
+    case '/':
+        std::cout << "a / b = " << a / b << '\n';
+        break;
+    default:
+        std::cout << "Error\n";
+    }
+    return 0;
 break;
 }
 }
